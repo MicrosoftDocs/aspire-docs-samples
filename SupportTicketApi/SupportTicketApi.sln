@@ -8,6 +8,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SupportTicketApi.ServiceDef
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SupportTicketApi.ApiModel", "SupportTicketApi\SupportTicketApi.ApiModel.csproj", "{CD887ABA-C3A9-40D7-9B4B-E5596708D2A0}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SupportTicketApi.MigrationService", "SupportTicketApi.MigrationService\SupportTicketApi.MigrationService.csproj", "{B1FB6716-4925-4806-9D30-EF491F4F8B22}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -26,6 +28,10 @@ Global
 		{CD887ABA-C3A9-40D7-9B4B-E5596708D2A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CD887ABA-C3A9-40D7-9B4B-E5596708D2A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CD887ABA-C3A9-40D7-9B4B-E5596708D2A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1FB6716-4925-4806-9D30-EF491F4F8B22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1FB6716-4925-4806-9D30-EF491F4F8B22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1FB6716-4925-4806-9D30-EF491F4F8B22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1FB6716-4925-4806-9D30-EF491F4F8B22}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

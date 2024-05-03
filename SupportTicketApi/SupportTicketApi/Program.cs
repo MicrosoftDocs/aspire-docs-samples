@@ -25,13 +25,6 @@ if (app.Environment.IsDevelopment())
     using (var scope = app.Services.CreateScope())
     {
         var context = scope.ServiceProvider.GetRequiredService<TicketContext>();
-        context.Database.EnsureCreated();
-
-        if(!context.Tickets.Any())
-        {
-            context.Tickets.Add(new SupportTicket { Title = "Initial Ticket", Description = "Test ticket, please ignore." });
-            context.SaveChanges();
-        }
     }
 }
 else
