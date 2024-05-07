@@ -32,7 +32,7 @@ public class Worker(
 
             await EnsureDatabaseAsync(dbContext, cancellationToken);
             await RunMigrationAsync(dbContext, cancellationToken);
-            await SeedData(dbContext, cancellationToken);
+            await SeedDataAsync(dbContext, cancellationToken);
         }
         catch (Exception ex)
         {
@@ -71,7 +71,7 @@ public class Worker(
         });
     }
 
-    private static async Task SeedData(TicketContext dbContext, CancellationToken cancellationToken)
+    private static async Task SeedDataAsync(TicketContext dbContext, CancellationToken cancellationToken)
     {
         SupportTicket firstTicket = new()
         {
