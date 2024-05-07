@@ -7,9 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SupportTicketApi.AppHost", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SupportTicketApi.ServiceDefaults", "SupportTicketApi.ServiceDefaults\SupportTicketApi.ServiceDefaults.csproj", "{2053FE88-6C53-4DCE-8097-BADA58C97A95}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SupportTicketApi.ApiModel", "SupportTicketApi\SupportTicketApi.ApiModel.csproj", "{CD887ABA-C3A9-40D7-9B4B-E5596708D2A0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SupportTicketApi.Api", "SupportTicketApi.Api\SupportTicketApi.Api.csproj", "{CD887ABA-C3A9-40D7-9B4B-E5596708D2A0}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SupportTicketApi.MigrationService", "SupportTicketApi.MigrationService\SupportTicketApi.MigrationService.csproj", "{B1FB6716-4925-4806-9D30-EF491F4F8B22}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SupportTicketApi.Data", "SupportTicketApi.Data\SupportTicketApi.Data.csproj", "{B13AA39F-37AB-41C7-9C67-8828EE4D5C55}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SupportTicketApi.MigrationService", "SupportTicketApi.MigrationService\SupportTicketApi.MigrationService.csproj", "{094D9FDC-D604-4444-AF83-379A5E9A6A46}"
 EndProject

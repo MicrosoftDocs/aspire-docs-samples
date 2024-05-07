@@ -1,5 +1,5 @@
-using SupportTicketApi.Data;
-using SupportTicketApi.Models;
+using SupportTicketApi.Data.Contexts;
+using SupportTicketApi.Data.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.AddSqlServerDbContext<TicketContext>("sqldata");
@@ -21,11 +21,6 @@ if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
-
-    using (var scope = app.Services.CreateScope())
-    {
-        var context = scope.ServiceProvider.GetRequiredService<TicketContext>();
-    }
 }
 else
 {

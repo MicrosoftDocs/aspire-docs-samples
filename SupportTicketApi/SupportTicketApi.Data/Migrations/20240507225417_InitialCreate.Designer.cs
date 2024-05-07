@@ -11,7 +11,7 @@ using SupportTicketApi.Data.Contexts;
 namespace SupportTicketApi.Data.Migrations
 {
     [DbContext(typeof(TicketContext))]
-    [Migration("20240503211858_InitialCreate")]
+    [Migration("20240507225417_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />

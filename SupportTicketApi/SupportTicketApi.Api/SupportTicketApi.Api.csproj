@@ -17,6 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\SupportTicketApi.Data\SupportTicketApi.Data.csproj" />
     <ProjectReference Include="..\SupportTicketApi.ServiceDefaults\SupportTicketApi.ServiceDefaults.csproj" />
   </ItemGroup>
 

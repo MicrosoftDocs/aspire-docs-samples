@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using SupportTicketApi.Models;
+using SupportTicketApi.Data.Models;
 
-namespace SupportTicketApi.Data
+namespace SupportTicketApi.Data.Contexts
 {
     public class TicketContext(DbContextOptions options) : DbContext(options)
     {

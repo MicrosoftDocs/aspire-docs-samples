@@ -1,12 +1,12 @@
 var builder = DistributedApplication.CreateBuilder(args);
 
-var sql = builder.AddSqlServer("sql", port: 14329)
-                 .AddDatabase("sqldata")
-                 .WithEndpoint(port: 14330);
+var sql = builder.AddSqlServer("sql")
+                 .AddDatabase("sqldata");
 
-builder.AddProject<Projects.SupportTicketApi_ApiModel>("api")
+builder.AddProject<Projects.SupportTicketApi_Api>("api")
     .WithReference(sql);
 
-builder.AddProject<Projects.SupportTicketApi_MigrationService>("supportticketapi-migrationservice");
+builder.AddProject<Projects.SupportTicketApi_MigrationService>("migrations")
+    .WithReference(sql);
 
 builder.Build().Run();

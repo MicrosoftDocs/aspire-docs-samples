@@ -4,15 +4,15 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using SupportTicketApi.Data;
+using SupportTicketApi.Data.Contexts;
 
 #nullable disable
 
-namespace SupportTicketApi.ApiModel.Migrations
+namespace SupportTicketApi.Data.Migrations
 {
     [DbContext(typeof(TicketContext))]
-    [Migration("20240426212659_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20240507225451_AddCompleted")]
+    partial class AddCompleted
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -24,13 +24,16 @@ namespace SupportTicketApi.ApiModel.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("SupportTicketApi.Models.SupportTicket", b =>
+            modelBuilder.Entity("SupportTicketApi.Data.Models.SupportTicket", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<bool>("Completed")
+                        .HasColumnType("bit");
 
                     b.Property<string>("Description")
                         .IsRequired()

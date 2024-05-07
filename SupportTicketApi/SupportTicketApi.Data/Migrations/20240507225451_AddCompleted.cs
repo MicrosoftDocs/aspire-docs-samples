@@ -2,10 +2,10 @@
 
 #nullable disable
 
-namespace SupportTicketApi.ApiModel.Migrations
+namespace SupportTicketApi.Data.Migrations
 {
     /// <inheritdoc />
-    public partial class NewField : Migration
+    public partial class AddCompleted : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)

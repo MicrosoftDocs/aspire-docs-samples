@@ -5,8 +5,8 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using SupportTicketApi.Data;
-using SupportTicketApi.Models;
+using SupportTicketApi.Data.Contexts;
+using SupportTicketApi.Data.Models;
 
 namespace SupportTicketApi.Controllers
 {

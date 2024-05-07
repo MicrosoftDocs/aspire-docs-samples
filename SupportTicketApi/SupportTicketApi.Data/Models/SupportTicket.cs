@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.Diagnostics.Eventing.Reader;
 
-namespace SupportTicketApi.Models
+namespace SupportTicketApi.Data.Models
 {
     public sealed class SupportTicket
     {
