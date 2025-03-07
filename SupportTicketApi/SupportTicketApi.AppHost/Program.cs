@@ -1,10 +1,11 @@
 var builder = DistributedApplication.CreateBuilder(args);
 
 var sql = builder.AddSqlServer("sql", port: 14329)
-                 .AddDatabase("sqldata")
-                 .WithEndpoint(port: 14330);
+                 .WithEndpoint(name: "sqlEndpoint", targetPort: 14330)
+                 .AddDatabase("sqldata");
 
 builder.AddProject<Projects.SupportTicketApi_Api>("api")
-    .WithReference(sql);
+    .WithReference(sql)
+    .WaitFor(sql);
 
 builder.Build().Run();
