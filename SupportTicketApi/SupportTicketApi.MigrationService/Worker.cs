@@ -68,4 +68,3 @@ public class Worker(
             await transaction.CommitAsync(cancellationToken);
         });
     }
-}
