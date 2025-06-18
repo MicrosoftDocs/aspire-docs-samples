@@ -22,17 +22,17 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 
-    using (var scope = app.Services.CreateScope())
-    {
-        var context = scope.ServiceProvider.GetRequiredService<TicketContext>();
-        context.Database.EnsureCreated();
+    //using (var scope = app.Services.CreateScope())
+    //{
+    //    var context = scope.ServiceProvider.GetRequiredService<TicketContext>();
+    //    context.Database.EnsureCreated();
 
-        if(!context.Tickets.Any())
-        {
-            context.Tickets.Add(new SupportTicket { Title = "Initial Ticket", Description = "Test ticket, please ignore." });
-            context.SaveChanges();
-        }
-    }
+    //    if(!context.Tickets.Any())
+    //    {
+    //        context.Tickets.Add(new SupportTicket { Title = "Initial Ticket", Description = "Test ticket, please ignore." });
+    //        context.SaveChanges();
+    //    }
+    //}
 }
 else
 {
