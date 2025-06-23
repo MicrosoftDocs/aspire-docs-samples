@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations;
+using NuGet.Common;
 
 namespace SupportTicketApi.Data.Models
 {
