@@ -32,7 +32,7 @@ public class Worker(
         }
         catch (Exception ex)
         {
-            activity?.RecordException(ex);
+            activity?.AddException(ex);
             throw;
         }
 
@@ -68,3 +68,4 @@ public class Worker(
             await transaction.CommitAsync(cancellationToken);
         });
     }
+}
