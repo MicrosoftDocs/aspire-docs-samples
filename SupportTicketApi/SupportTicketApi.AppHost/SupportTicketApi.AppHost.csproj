@@ -20,6 +20,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\SupportTicketApi.Api\SupportTicketApi.Api.csproj" />
+    <ProjectReference Include="..\SupportTicketApi.MigrationService\SupportTicketApi.MigrationService.csproj" />
   </ItemGroup>
 
 </Project>
