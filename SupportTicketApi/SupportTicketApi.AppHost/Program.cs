@@ -4,12 +4,12 @@ var sql = builder.AddSqlServer("sql", port: 14329)
                  .WithEndpoint(name: "sqlEndpoint", targetPort: 14330)
                  .AddDatabase("sqldata");
 
-var migration = builder.AddProject<Projects.SupportTicketApi_MigrationService>("migration")
+var migrations = builder.AddProject<Projects.SupportTicketApi_MigrationService>("migrations")
     .WithReference(sql)
     .WaitFor(sql);
 
 builder.AddProject<Projects.SupportTicketApi_Api>("api")
     .WithReference(sql)
-    .WaitForCompletion(migration);
+    .WaitForCompletion(migrations);
 
 builder.Build().Run();

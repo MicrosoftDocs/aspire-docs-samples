@@ -21,7 +21,7 @@ public class Worker(
             using var scope = serviceProvider.CreateScope();
             var dbContext = scope.ServiceProvider.GetRequiredService<TicketContext>();
 
-            await RunMigrationAsync(dbContext, cancellationToken);
+            await dbContext.Database.MigrateAsync(cancellationToken);
         }
         catch (Exception ex)
         {
@@ -30,13 +30,5 @@ public class Worker(
         }
 
         hostApplicationLifetime.StopApplication();
-    }
-
-    private static async Task RunMigrationAsync(TicketContext dbContext, CancellationToken cancellationToken)
-    {
-        // In EF 9.0, MigrateAsync handles transactions and execution strategies internally
-        // No need to wrap in explicit transaction or execution strategy
-        // Seeding is now handled by UseAsyncSeeding configuration
-        await dbContext.Database.MigrateAsync(cancellationToken);
     }
 }
