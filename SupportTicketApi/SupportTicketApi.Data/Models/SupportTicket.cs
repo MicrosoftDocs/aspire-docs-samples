@@ -9,5 +9,6 @@ namespace SupportTicketApi.Data.Models
         public string Title { get; set; } = string.Empty;
         [Required]
         public string Description { get; set; } = string.Empty;
+        public bool Completed { get; set; }
     }
 }
