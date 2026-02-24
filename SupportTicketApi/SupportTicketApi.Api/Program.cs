@@ -1,5 +1,4 @@
 using SupportTicketApi.Data.Contexts;
-using SupportTicketApi.Data.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.AddSqlServerDbContext<TicketContext>("sqldata");
@@ -21,18 +20,6 @@ if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
-
-    using (var scope = app.Services.CreateScope())
-    {
-        var context = scope.ServiceProvider.GetRequiredService<TicketContext>();
-        context.Database.EnsureCreated();
-
-        if(!context.Tickets.Any())
-        {
-            context.Tickets.Add(new SupportTicket { Title = "Initial Ticket", Description = "Test ticket, please ignore." });
-            context.SaveChanges();
-        }
-    }
 }
 else
 {
