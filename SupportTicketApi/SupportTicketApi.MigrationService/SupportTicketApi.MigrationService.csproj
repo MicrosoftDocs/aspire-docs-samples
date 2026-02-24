@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Worker">
 
   <PropertyGroup>
-    <TargetFramework>net9.0</TargetFramework>
+    <TargetFramework>net10.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <!-- Make build happy with generated migrations -->
@@ -9,11 +9,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="9.0.8">
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="10.0.3">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="Aspire.Microsoft.EntityFrameworkCore.SqlServer" Version="9.4.0" />
+    <PackageReference Include="Aspire.Microsoft.EntityFrameworkCore.SqlServer" Version="13.1.1" />
     <ProjectReference Include="..\SupportTicketApi.Data\SupportTicketApi.Data.csproj" />
     <ProjectReference Include="..\SupportTicketApi.ServiceDefaults\SupportTicketApi.ServiceDefaults.csproj" />
   </ItemGroup>

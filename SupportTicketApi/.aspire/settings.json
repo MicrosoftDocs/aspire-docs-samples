@@ -1,3 +1,3 @@
 {
-  "appHostPath": "../SupportTicketApi.AppHost/SupportTicketApi.AppHost.csproj"
+  "appHostPath": "./SupportTicketApi/SupportTicketApi.AppHost/SupportTicketApi.AppHost.csproj"
 }
