@@ -2,7 +2,7 @@
 
 #nullable disable
 
-namespace SupportTicketApi.Data.Migrations
+namespace SupportTicketApi.MigrationService.Migrations
 {
     /// <inheritdoc />
     public partial class InitialCreate : Migration

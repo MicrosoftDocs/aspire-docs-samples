@@ -13,6 +13,7 @@ builder.Services.AddOpenTelemetry()
 
 builder.AddSqlServerDbContext<TicketContext>("sqldata", configureDbContextOptions: options =>
 {
+    options.ConfigureSqlEngine(o => o.MigrationsAssembly("SupportTicketApi.MigrationService"));
     options.UseAsyncSeeding(async (context, _, cancellationToken) =>
     {
         if (context is TicketContext ticketContext &&

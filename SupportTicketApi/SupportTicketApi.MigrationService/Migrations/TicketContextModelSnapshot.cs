@@ -2,20 +2,17 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
-using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using SupportTicketApi.Data.Contexts;
 
 #nullable disable
 
-namespace SupportTicketApi.Data.Migrations
+namespace SupportTicketApi.MigrationService.Migrations
 {
     [DbContext(typeof(TicketContext))]
-    [Migration("20250925130923_InitialCreate")]
-    partial class InitialCreate
+    partial class TicketContextModelSnapshot : ModelSnapshot
     {
-        /// <inheritdoc />
-        protected override void BuildTargetModel(ModelBuilder modelBuilder)
+        protected override void BuildModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
