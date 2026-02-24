@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="SupportTicketApi.Api/SupportTicketApi.Api.csproj" />
+  <Project Path="SupportTicketApi.AppHost/SupportTicketApi.AppHost.csproj" />
+  <Project Path="SupportTicketApi.Data/SupportTicketApi.Data.csproj" />
+  <Project Path="SupportTicketApi.MigrationService/SupportTicketApi.MigrationService.csproj" />
+  <Project Path="SupportTicketApi.ServiceDefaults/SupportTicketApi.ServiceDefaults.csproj" />
+</Solution>
